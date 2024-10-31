@@ -29,8 +29,9 @@
           <button class="btn content-button-sort">Ordenar </button>
         </div>
         <div class="content-buttons-desktop">
+          <img src="/img/arrow.svg" class="arrow" />
           <select>
-            <option value="default">Ordenar por:</option>
+            <option value="" selected>Ordenar por:</option>
             <option value="Mas recentes">Mas recentes:</option>
             <option value="Menor preço">Menor preço:</option>
             <option value="Maior preço">Maior preço:</option>
@@ -39,22 +40,25 @@
       </section>
     </div>
     <div class="container">
-      <section class="aside">
-        <div class="aside-colors">
-          <h3>CORES</h3>
-          <div class="aside-options-colors">
+      <section class="catalog">
+        <section class="aside-desktop">
+          <div class="aside-option aside-colors">
+            <h3>CORES</h3>
+            <div class="list-options" id="aside-options-colors"> </div>
           </div>
-        </div>
-        <div class="aside-sizes">
-          <h3>TAMANHOS</h3>
-          <div class="aside-options-sizes"></div>
-        </div>
-        <div class="aside-prices">
-          <h3>FAIXA DE PREÇO</h3>
-          <div class="aside-options-prices"></div>
-        </div>
-      </section>
-      <section class="shelf-products">
+          <div class="aside-option aside-sizes">
+            <h3>TAMANHOS</h3>
+            <div class="list-options-grid" id="aside-options-sizes"></div>
+          </div>
+          <div class="aside-option aside-prices">
+            <h3>FAIXA DE PREÇO</h3>
+            <div class="list-options" id="aside-options-prices"></div>
+          </div>
+        </section>
+        <section class="container-shelf">
+          <div class="shelf-products"></div>
+          <div class="container-load-more"></div>
+        </section>
       </section>
     </div>
   </main>
