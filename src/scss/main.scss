@@ -1,1 +1,13 @@
 @import "reset";
+@import "footer";
+@import "header";
+@import "shelf";
+@import "aside";
+@import "header.content";
+@import "product";
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
