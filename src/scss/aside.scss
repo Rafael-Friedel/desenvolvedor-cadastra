@@ -1,0 +1,102 @@
+@import "colors";
+@import "mixins";
+
+.aside-desktop {
+  @include mobile {
+    display: none;
+  }
+  width: 100%;
+  max-width: 157px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  h3 {
+    padding-left: 2px;
+    color: #333;
+    font-size: 16px;
+    line-height: 21.79px;
+    letter-spacing: 0.08px;
+  }
+
+  .aside-option {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .list-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list-options-grid {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+.catalog {
+  display: flex;
+  max-width: 1181px;
+  width: 100%;
+  gap: 48px;
+}
+
+.option-size {
+  width: 32px;
+  height: 32px;
+  border: 1px solid $black50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $black50;
+  font-size: 16px;
+  line-height: 21.79px;
+  letter-spacing: 0.8px;
+}
+
+.option-size:hover,
+.selected {
+  border: 1px solid $primary;
+  color: $black;
+}
+
+.custom-checkbox {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $black50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-checkbox:hover {
+  .check {
+    background-color: $primary;
+  }
+}
+
+.check,
+.checked {
+  width: 10px;
+  height: 10px;
+}
+
+.checked {
+  background-color: $primary;
+}
+
+.option {
+  font-size: 14px;
+  line-height: 14px;
+}
