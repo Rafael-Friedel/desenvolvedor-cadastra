@@ -3,8 +3,10 @@
 
 footer {
   background-color: $black;
-  width: 100vw;
   padding: 7px 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer p {
