@@ -54,6 +54,7 @@ npm run start:gp
 
 6. Verifique a Porta do Projeto
 Se o projeto não estiver disponível na porta 3000, é possível que essa porta já esteja ocupada. Nesse caso, o aplicativo será iniciado em outra porta. O terminal onde você executou o comando exibirá a nova porta utilizada. Veja o exemplo abaixo para localizar a URL exata em que o aplicativo está rodando.
+
 ![image](https://github.com/user-attachments/assets/dccf4190-e6f7-4996-af7c-a8203f2bea8e)
 
 
