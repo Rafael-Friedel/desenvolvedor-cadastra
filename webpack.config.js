@@ -9,13 +9,15 @@ module.exports = (paths) => ({
     path: path.resolve(__dirname, paths.dest),
     filename: "bundle.js",
   },
+  resolve: {
+    extensions: [".ts", ".js"],
+  },
   mode: "development",
   module: {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /(node_modules|bower_components)/,
-        include: path.resolve(__dirname, paths.scripts.src),
         use: "ts-loader",
       },
     ],
