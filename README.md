@@ -8,7 +8,6 @@ TypeScript: Implementação de lógica com tipagem estática.
 
 ## Links Rápidos
 
-- [Clone do Projeto](git@github.com:Rafael-Friedel/desenvolvedor-cadastra.git)
 - [Documentação da API](https://www.npmjs.com/package/json-server)
 - [Figma proposto](https://www.figma.com/design/Z5RCG3Ewzwm7XIPuhMUsBZ/Desafio-Cadastra?node-id=0-1&node-type=canvas&t=0kqQyD6pdIuf0j0C-0)
 
