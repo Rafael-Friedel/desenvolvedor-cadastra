@@ -1,5 +1,6 @@
 import {
   applyFiltersMobile,
+  clearFilters,
   toggleClassCheckBox,
   toggleClassSizesElements,
 } from "./applyFilters";
@@ -59,6 +60,7 @@ async function main() {
     ".options-filter-prices",
     ".arrow-prices"
   );
+  clearFilters();
   applyFiltersMobile();
   initializeDropdown();
   updateProductCount();

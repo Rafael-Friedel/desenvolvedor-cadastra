@@ -8,8 +8,6 @@ import {
 const filters = parseUrlParams();
 const isMobile = getDeviceType() === "mobile";
 
-console.log(filters, "xablau");
-
 export const toggleClassCheckBox = (options: string) => {
   const parentElement = document.querySelector(`#aside-options-${options}s`);
   const parentElementMobile = document.querySelector(
@@ -75,7 +73,27 @@ export const applyFiltersMobile = () => {
       urlParams.append("price", price);
     });
 
+    urlParams.append("sortBy", filters.sortBy);
+
     const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
     window.location.href = newUrl;
+  });
+};
+
+export const clearFilters = () => {
+  const btnClear = document.querySelector(".clear-filters");
+  btnClear.addEventListener("click", () => {
+    filters.colors = [];
+    filters.sizes = [];
+    filters.prices = [];
+    const currentUrl = new URL(window.location.href);
+    const baseUrl = currentUrl.pathname;
+    const sortBy = currentUrl.searchParams.get("sortBy");
+    const newUrl = new URL(baseUrl, window.location.origin);
+    if (sortBy) {
+      newUrl.searchParams.set("sortBy", sortBy);
+    }
+    window.history.replaceState({}, document.title, newUrl.toString());
+    location.reload();
   });
 };
