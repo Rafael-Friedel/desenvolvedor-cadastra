@@ -52,6 +52,11 @@ npm run start:gp
  http://localhost:3000
 ```
 
+6. Verifique a Porta do Projeto
+Se o projeto não estiver disponível na porta 3000, é possível que essa porta já esteja ocupada. Nesse caso, o aplicativo será iniciado em outra porta. O terminal onde você executou o comando exibirá a nova porta utilizada. Veja o exemplo abaixo para localizar a URL exata em que o aplicativo está rodando.
+![image](https://github.com/user-attachments/assets/dccf4190-e6f7-4996-af7c-a8203f2bea8e)
+
+
 Uma vez que o comando é dado ele irá levantar 2 servidores, sendo eles:
  - um para acessar o front-end que roda na porta 3000. No qual pode ser acessado pela url: http://localhost:3000
  - um para o json-server que irá export uma api com a lista de produtos que roda na porta 5000. Para acessar os produtos é na url:  http://localhost:5000/products
