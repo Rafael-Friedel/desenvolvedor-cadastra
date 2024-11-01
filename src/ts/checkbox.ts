@@ -1,4 +1,4 @@
-import { checkSearchParam, updateUrlWithSearchParam } from "./utils";
+import { checkSearchParam } from "./utils";
 
 export const createCheckbox = (
   label: string,
@@ -25,25 +25,4 @@ export const createCheckbox = (
   labelElement.appendChild(optionText);
 
   return labelElement;
-};
-
-export const toggleClassCheckBox = (options: string) => {
-  const parentElement = document.querySelector(`#aside-options-${options}s`);
-  const parentElementMobile = document.querySelector(
-    `.options-filter-${options}s`
-  );
-  const handleClick = (event: MouseEvent | TouchEvent) => {
-    const target = event.target as HTMLElement;
-    const labelElement = target.closest("label.custom-checkbox");
-    if (labelElement) {
-      const checkElement = labelElement.querySelector(`.check`);
-      if (checkElement) {
-        checkElement.classList.toggle("checked");
-        updateUrlWithSearchParam(`${options}=${checkElement.id}`);
-      }
-    }
-  };
-
-  parentElement.addEventListener("click", handleClick);
-  parentElementMobile.addEventListener("click", handleClick);
 };
