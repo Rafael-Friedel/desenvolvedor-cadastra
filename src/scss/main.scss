@@ -5,6 +5,8 @@
 @import "aside";
 @import "header.content";
 @import "product";
+@import "filter.mobile";
+@import "sortby.mobile";
 
 .container {
   display: flex;
@@ -13,4 +15,9 @@
 
 body {
   height: 100vh;
+  overflow-y: auto;
+  &.no-scroll {
+    position: fixed;
+    overflow-y: hidden;
+  }
 }

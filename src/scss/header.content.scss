@@ -76,8 +76,8 @@
     pointer-events: none;
     transition: transform 0.3s;
   }
+}
 
-  .rotate {
-    transform: translateY(-50%) rotate(180deg);
-  }
+.rotate {
+  transform: translateY(-50%) rotate(180deg);
 }
