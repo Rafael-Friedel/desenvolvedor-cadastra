@@ -16,7 +16,7 @@ export const getCartQuantity = () => {
 };
 
 export const getDeviceType = () =>
-  window.innerWidth <= 600 ? "mobile" : "desktop";
+  window.innerWidth <= 1224 ? "mobile" : "desktop";
 
 export const getDisplayedProductsCount = () =>
   getDeviceType() === "mobile" ? 4 : 9;

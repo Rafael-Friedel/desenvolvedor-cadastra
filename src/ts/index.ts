@@ -1,6 +1,15 @@
+import {
+  applyFiltersMobile,
+  clearFilters,
+  toggleClassCheckBox,
+  toggleClassSizesElements,
+} from "./applyFilters";
 import { updateProductCount } from "./cardProduct";
-import { toggleClassCheckBox } from "./checkbox";
-import { apllyAnimationArrow, initializeDropdown } from "./dropDown";
+import {
+  apllyAnimationArrow,
+  applyMobileSortOptions,
+  initializeDropdown,
+} from "./dropDown";
 import { filterProducts } from "./filterProducts";
 import {
   addAccordionEvent,
@@ -11,7 +20,6 @@ import {
 } from "./optionsFilters";
 import { getProducts } from "./service";
 import { addButtonLoadMore, renderProducts } from "./shelf";
-import { toggleClassSizesElements } from "./sizeSelector";
 import {
   getColorsAndSizes,
   getDisplayedProductsCount,
@@ -23,6 +31,8 @@ async function main() {
   const filters = parseUrlParams();
   const filteredProducts = filterProducts(products, filters);
   const { colors, sizes } = getColorsAndSizes(products);
+
+  applyMobileSortOptions();
 
   applyMobileFilterToggleEvents(
     ".content-button-sort",
@@ -50,6 +60,8 @@ async function main() {
     ".options-filter-prices",
     ".arrow-prices"
   );
+  clearFilters();
+  applyFiltersMobile();
   initializeDropdown();
   updateProductCount();
   toggleClassCheckBox("price");
