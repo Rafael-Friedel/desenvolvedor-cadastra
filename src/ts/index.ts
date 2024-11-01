@@ -88,30 +88,6 @@ async function main() {
   };
 
   const filters = parseUrlParams();
-  console.log(filters);
-
-  // const filterProducts = (products: Product[], filters: ProductFilters) => {
-  //   return products.filter((product) => {
-  //     const colorMatch =
-  //       filters.colors.length === 0 || filters.colors.includes(product.color);
-  //     const sizeMatch =
-  //       filters.sizes.length === 0 ||
-  //       product.size.some((size) => filters.sizes.includes(size));
-  //     const priceMatch =
-  //       filters.prices.length === 0 ||
-  //       filters.prices.some((priceRange) => {
-  //         if (priceRange.includes("-")) {
-  //           const [minPrice, maxPrice] = priceRange.split("-").map(Number);
-  //           return product.price >= minPrice && product.price <= maxPrice;
-  //         } else {
-  //           const minPrice = Number(priceRange);
-  //           return product.price >= minPrice;
-  //         }
-  //       });
-
-  //     return colorMatch && sizeMatch && priceMatch;
-  //   });
-  // };
 
   const filterProducts = (products: Product[], filters: ProductFilters) => {
     let filtered = products.filter((product) => {
