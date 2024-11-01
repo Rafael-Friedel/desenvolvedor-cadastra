@@ -1,5 +1,9 @@
+import {
+  applyFiltersMobile,
+  toggleClassCheckBox,
+  toggleClassSizesElements,
+} from "./applyFilters";
 import { updateProductCount } from "./cardProduct";
-import { toggleClassCheckBox } from "./checkbox";
 import {
   apllyAnimationArrow,
   applyMobileSortOptions,
@@ -15,7 +19,6 @@ import {
 } from "./optionsFilters";
 import { getProducts } from "./service";
 import { addButtonLoadMore, renderProducts } from "./shelf";
-import { toggleClassSizesElements } from "./sizeSelector";
 import {
   getColorsAndSizes,
   getDisplayedProductsCount,
@@ -56,6 +59,7 @@ async function main() {
     ".options-filter-prices",
     ".arrow-prices"
   );
+  applyFiltersMobile();
   initializeDropdown();
   updateProductCount();
   toggleClassCheckBox("price");

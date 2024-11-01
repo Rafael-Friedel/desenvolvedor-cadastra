@@ -20,3 +20,9 @@ export type ProductFilters = {
   prices: string[];
   sortBy: string;
 };
+
+export enum FilterType {
+  Colors = "colors",
+  Sizes = "sizes",
+  Prices = "prices",
+}
