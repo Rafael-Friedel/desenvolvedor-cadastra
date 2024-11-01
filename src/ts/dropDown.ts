@@ -61,3 +61,13 @@ export const apllyAnimationArrow = () => {
     document.querySelector(".arrow").classList.toggle("rotate");
   });
 };
+
+export const applyMobileSortOptions = () => {
+  const allSortByMobile = document.querySelectorAll(".option-sort-mobile");
+  allSortByMobile.forEach((sortBy) => {
+    sortBy.addEventListener("click", (event) => {
+      const target = event.target as HTMLElement;
+      updateUrlWithSearchParam(`sortBy=${target.title}`);
+    });
+  });
+};

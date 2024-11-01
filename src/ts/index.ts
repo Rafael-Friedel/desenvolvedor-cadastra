@@ -1,6 +1,10 @@
 import { updateProductCount } from "./cardProduct";
 import { toggleClassCheckBox } from "./checkbox";
-import { apllyAnimationArrow, initializeDropdown } from "./dropDown";
+import {
+  apllyAnimationArrow,
+  applyMobileSortOptions,
+  initializeDropdown,
+} from "./dropDown";
 import { filterProducts } from "./filterProducts";
 import {
   addAccordionEvent,
@@ -23,6 +27,8 @@ async function main() {
   const filters = parseUrlParams();
   const filteredProducts = filterProducts(products, filters);
   const { colors, sizes } = getColorsAndSizes(products);
+
+  applyMobileSortOptions();
 
   applyMobileFilterToggleEvents(
     ".content-button-sort",
