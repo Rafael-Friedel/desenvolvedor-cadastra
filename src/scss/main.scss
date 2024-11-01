@@ -18,6 +18,8 @@
 body {
   height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
   &.no-scroll {
     position: fixed;
     overflow-y: hidden;
