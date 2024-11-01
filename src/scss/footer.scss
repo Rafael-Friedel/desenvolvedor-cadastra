@@ -1,0 +1,19 @@
+@import "colors";
+@import "mixins";
+
+footer {
+  background-color: $black;
+  padding: 7px 0px;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 19.07px;
+  letter-spacing: 0.7px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}

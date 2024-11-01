@@ -1,0 +1,48 @@
+@import "colors";
+@import "mixins";
+
+.dropdown {
+  position: relative;
+  width: 142px;
+}
+
+.dropdown-option {
+  width: 142px;
+}
+
+.dropdown-btn {
+  padding: 10px;
+  border: 1px solid $gray;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-options {
+  position: absolute;
+  width: 140px;
+  border: 1px solid $gray;
+  border-top: none;
+  background-color: white;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.dropdown-option:hover,
+.dropdown-option.sort-selected {
+  background-color: $primary;
+  color: white;
+}
+
+.dropdown-btn,
+.dropdown-options {
+  max-width: 142px;
+}

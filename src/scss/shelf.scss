@@ -1,0 +1,36 @@
+@import "colors";
+@import "mixins";
+
+.shelf-products {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 19px;
+  padding: 0 16px;
+  @include desktop {
+    gap: 64px;
+    row-gap: 42px;
+    padding: 0 58px;
+  }
+}
+
+.container-load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0 70px 0;
+}
+
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 175px;
+  background-color: $primary;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.07px;
+}

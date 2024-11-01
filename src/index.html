@@ -10,9 +10,140 @@
 </head>
 
 <body>
+  <header>
+    <div class="header-content">
+      <div class="header-logo">
+        <img src="/img/logo-cadastra.png" alt="logo cadastra" width="165" height="25" loading="eager" />
+      </div>
+      <div class="header-minicart">
+        <img src="/img/minicart.svg" alt="icone sacola" width="20" height="23" loading="eager" />
+        <div class="count-products">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <div class="container">
+      <section class="content-header">
+        <h1 class="content-title">Blusas</h1>
+        <div class="content-buttons-mobile">
+          <button class="btn content-button-filter">Filtrar</button>
+          <button class="btn content-button-sort">Ordenar </button>
+        </div>
+        <section class="section-filters-mobile">
+          <header class="header-content-filters">
+            <div class="title-section">FILTRAR</div>
+            <button id="close-filters">
+              <img src="/img/close-button.svg" alt="botão fechar" width="18" height="18" loading="lazy" />
+            </button>
+          </header>
+          <div class="content-filters-mobile">
+            <div class="container-option-filter-mobile">
+              <div class="option-filter-mobile" id="options-colors-mobile">
+                <span class="title-option-mobile">cores</span>
+                <img src="/img/arrow.svg" width="18" height="13" loading="lazy" alt="dropdown cores"
+                  class="arrow-colors" />
+              </div>
+              <div class="option-filters options-filter-colors">
 
+              </div>
+            </div>
+            <div class="container-option-filter-mobile">
+              <div class="option-filter-mobile" id="options-sizes-mobile">
+                <span class="title-option-mobile">tamanhos</span>
+                <img src="/img/arrow.svg" width="18" height="13" loading="lazy" alt="dropdown tamanhos"
+                  class="arrow-size" />
+              </div>
+              <div class="option-filters options-filter-sizes">
+
+              </div>
+            </div>
+            <div class="container-option-filter-mobile">
+              <div class="option-filter-mobile" id="options-prices-mobile">
+                <span class="title-option-mobile">faixa de preço</span>
+                <img src="/img/arrow.svg" width="18" height="13" loading="lazy" alt="dropdown faixa de preço"
+                  class="arrow-prices" />
+              </div>
+
+              <div class="option-filters options-filter-prices">
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-filter-mobile">
+            <div class="actions-filters">
+              <button class="apply-filters">aplicar</button>
+              <button class="clear-filters">limpar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-sortby-mobile">
+          <header class="header-content-sortby">
+            <div class="title-section">ORDENAR</div>
+            <button id="close-sortby">
+              <img src="/img/close-button.svg" alt="botão fechar" width="18" height="18" loading="lazy" />
+            </button>
+          </header>
+          <div class="content-sortby-mobile">
+            <div class="option-sort-mobile">
+              <span class="title-option-sort-mobile">Mais recentes</span>
+            </div>
+            <div class="option-sort-mobile">
+              <span class="title-option-sort-mobile">Maior preço</span>
+            </div>
+            <div class="option-sort-mobile">
+              <span class="title-option-sort-mobile">Menor preço</span>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="content-buttons-desktop">
+
+          <div class="dropdown">
+            <div class="dropdown-btn" id="dropdownBtn">
+              Ordenar por:
+            </div>
+            <img src="/img/arrow.svg" class="arrow" />
+            <div class="dropdown-options" id="dropdownOptions">
+              <div class="dropdown-option" id="Mais recentes">Mais recentes</div>
+              <div class="dropdown-option" id="Menor preço">Menor preço</div>
+              <div class="dropdown-option" id="Maior preço">Maior preço</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <div class="container">
+      <section class="catalog">
+        <section class="aside-desktop">
+          <div class="aside-option aside-colors">
+            <h3>CORES</h3>
+            <div class="list-options" id="aside-options-colors"> </div>
+          </div>
+          <div class="aside-option aside-sizes">
+            <h3>TAMANHOS</h3>
+            <div class="list-options-grid" id="aside-options-sizes"></div>
+          </div>
+          <div class="aside-option aside-prices">
+            <h3>FAIXA DE PREÇO</h3>
+            <div class="list-options" id="aside-options-prices"></div>
+          </div>
+        </section>
+        <section class="container-shelf">
+          <div class="shelf-products"></div>
+          <div class="container-load-more"></div>
+        </section>
+      </section>
+    </div>
+  </main>
 </body>
-<h1>Desafio Cadastra</h1>
+<footer>
+  <p>CADASTRA: Implantação de E-commerce VTEX</p>
+</footer>
 
 <script src="bundle.js"></script>
 

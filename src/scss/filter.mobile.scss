@@ -1,0 +1,120 @@
+@import "colors";
+@import "mixins";
+
+.section-filters-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+
+  @include desktop {
+    display: none;
+  }
+
+  &.is-visible {
+    transform: translateX(0);
+  }
+}
+
+.header-content-filters {
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid $gray;
+}
+
+.title-section {
+  font-size: 28px;
+  line-height: 38.13px;
+  color: $gray;
+}
+
+.content-filters-mobile {
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.option-filter-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-option-mobile {
+  font-size: 24px;
+  line-height: 32.68px;
+  letter-spacing: 1.2px;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+.footer-filter-mobile {
+  position: fixed;
+  bottom: 16px;
+  width: 100%;
+}
+
+.actions-filters {
+  display: flex;
+  gap: 23px;
+  padding: 0 16px;
+}
+
+.apply-filters,
+.clear-filters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  font-size: 14px;
+  line-height: 19.07px;
+  text-transform: uppercase;
+}
+
+.apply-filters {
+  background-color: $primary;
+  color: white;
+}
+
+.clear-filters {
+  border: 1px solid $gray;
+  color: $gray;
+}
+
+.options-filter-sizes {
+  display: none;
+  &.is-visible {
+    display: flex;
+    padding-top: 20px;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 153px;
+  }
+}
+
+.options-filter-colors {
+  display: none;
+  &.is-visible {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.options-filter-prices {
+  display: none;
+  &.is-visible {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

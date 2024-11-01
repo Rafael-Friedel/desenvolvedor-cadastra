@@ -1,1 +1,26 @@
 @import "reset";
+@import "footer";
+@import "header";
+@import "shelf";
+@import "aside";
+@import "header.content";
+@import "product";
+@import "filter.mobile";
+@import "sortby.mobile";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "dropdown";
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  overflow-y: auto;
+  &.no-scroll {
+    position: fixed;
+    overflow-y: hidden;
+  }
+  font-family: "Open Sans", sans-serif;
+}

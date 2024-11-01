@@ -1,0 +1,71 @@
+@import "colors";
+@import "mixins";
+
+.content-header {
+  width: 100%;
+  max-width: 1181px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px 34px 16px;
+  gap: 12px;
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.content-title {
+  width: 100%;
+  color: #333;
+  font-size: 32px;
+  line-height: 43.58px;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.content-buttons-mobile {
+  display: flex;
+  border: 1px solid $gray;
+  color: $gray;
+  width: 100%;
+  .btn {
+    flex: 1;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    background-color: white;
+    font-size: 24px;
+    line-height: 32.68px;
+
+    &:not(:last-child) {
+      border-right: 1px solid $gray;
+    }
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.content-buttons-desktop {
+  @include mobile {
+    display: none;
+  }
+
+  position: relative;
+
+  .arrow {
+    position: absolute;
+    right: 12px;
+    top: 38%;
+    pointer-events: none;
+    transition: transform 0.3s;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
