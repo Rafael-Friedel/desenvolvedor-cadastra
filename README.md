@@ -49,8 +49,7 @@ npm install
 npm run start:gp
 ```
 
-5. Acesse o Frontend
-O frontend será iniciado no endereço
+5. Acesse o Frontend que será iniciado no endereço
 ```bash
  http://localhost:3000
 ```
