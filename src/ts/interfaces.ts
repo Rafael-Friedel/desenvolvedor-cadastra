@@ -8,3 +8,15 @@ export interface Product {
   size: Array<string>;
   date: string;
 }
+
+export type PriceRange = {
+  label: string;
+  value: string;
+};
+
+export type ProductFilters = {
+  colors: string[];
+  sizes: string[];
+  prices: string[];
+  sortBy: string;
+};
