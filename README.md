@@ -28,10 +28,9 @@ Siga os passos abaixo para configurar o projeto em sua máquina local:
 Clone o repositório para sua máquina local utilizando o seguinte comando:
 
 ```bash
-git clone https://link-do-repositorio.git
+git clone git@github.com:Rafael-Friedel/desenvolvedor-cadastra.git
 ```
 
-git clone git@github.com:Rafael-Friedel/desenvolvedor-cadastra.git
 2. Acesse o Diretório do Projeto
 
 ```bash
