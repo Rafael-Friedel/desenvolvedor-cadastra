@@ -50,9 +50,9 @@ npm run start:gp
 ```
 
 5. Acesse o Frontend
-O frontend será iniciado em seu navegador no endereço
+O frontend será iniciado no endereço
 ```bash
- http://localhost:3000.
+ http://localhost:3000
 ```
 
 Uma vez que o comando é dado ele irá levantar 2 servidores, sendo eles:
